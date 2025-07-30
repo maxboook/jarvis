@@ -49,7 +49,18 @@ Other than that, all you need is to install all the dependencies and then compil
 Or run dev with `cargo tauri dev`.
 
 <br><br>
-*Thought you might need some of the platform specific libraries for [PvRecorder](https://github.com/Picovoice/pvrecorder) and [Vosk](https://github.com/alphacep/vosk-api).*
+*Thought you might need some of the platform specific libraries for [PvRecorder](https://github.com/Picovoice/pvrecorder) and [Vosk](https://github.com/alphacep/vosk-api).* 
+
+## macOS
+
+The tray icon now works on macOS. Start the application from the `app` directory:
+
+```bash
+cargo run --release
+```
+
+The wake-word listener and other runtime logic run in a background thread while
+the system tray lives on the main thread.
 
 ## Author
 
